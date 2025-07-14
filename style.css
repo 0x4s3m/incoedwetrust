@@ -1,49 +1,75 @@
-/* Basic Reset */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Body Styling */
+/* Body */
 body {
-  font-family: "Segoe UI", sans-serif;
-  line-height: 1.6;
-  background-color: #f5f9ff;
-  color: #333;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #007cf0, #00dfd8);
+  color: #fff;
+  min-height: 100vh;
   padding: 20px;
+}
+
+/* Layout */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 /* Header */
 header {
-  background: #007acc;
-  color: white;
-  padding: 2rem;
   text-align: center;
-  border-radius: 12px;
+  margin-bottom: 2rem;
 }
 
-/* Main Sections */
-main {
-  margin-top: 2rem;
+header h1 {
+  font-size: 3rem;
+  background: linear-gradient(to right, #ffffff, #c0f7ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-section {
-  background: white;
-  padding: 1.5rem;
-  border-radius: 8px;
-  margin-bottom: 1.5rem;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+header p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* Cards */
+.card {
+  margin-bottom: 2rem;
+  padding: 2rem;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card h2 {
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.card ul {
+  list-style: none;
+}
+
+.card ul li {
+  margin-bottom: 10px;
 }
 
 /* Footer */
 footer {
   text-align: center;
-  padding: 1rem;
+  margin-top: 3rem;
   font-size: 0.9rem;
-  color: #555;
+  opacity: 0.8;
 }
+
 footer a {
-  color: #007acc;
-  text-decoration: none;
+  color: #fff;
+  text-decoration: underline;
 }
